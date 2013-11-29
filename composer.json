@@ -2,7 +2,7 @@
     "name": "pallo/web-security-generic",
     "description": "Generic security model integration for a Pallo web application.",
     "license": "MIT",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "authors": [
         {
             "name": "Joris Vandeweerd",
@@ -14,6 +14,6 @@
         "pallo/lib-security": ">=0.1.2",
         "pallo/lib-system": ">=0.1.2",
         "pallo/web": ">=0.2.4",
-        "pallo/web-security": ">=0.1.0",
+        "pallo/web-security": ">=0.1.0"
     }    
 }
