@@ -1,7 +1,7 @@
 {
     "dependencies": [
         {
-            "class": "pallo\\library\\system\\file\\File",
+            "class": "ride\\library\\system\\file\\File",
             "id": "security.model",
             "calls": [
                 {
@@ -19,8 +19,8 @@
             ]
         },
         {
-            "interfaces": "pallo\\library\\security\\model\\generic\\io\\SecurityModelIO", 
-            "class": "pallo\\library\\security\\model\\generic\\io\\XmlSecurityModelIO", 
+            "interfaces": "ride\\library\\security\\model\\generic\\io\\SecurityModelIO", 
+            "class": "ride\\library\\security\\model\\generic\\io\\XmlSecurityModelIO", 
             "id": "xml",
             "calls": [
                 {
@@ -30,7 +30,7 @@
                             "name": "file",
                             "type": "dependency",
                             "properties": {
-                                "interface": "pallo\\library\\system\\file\\File",
+                                "interface": "ride\\library\\system\\file\\File",
                                 "id": "security.model"
                             }
                         }
@@ -39,8 +39,8 @@
             ]
         },
         {
-            "interfaces": ["pallo\\library\\security\\model\\SecurityModel", "pallo\\library\\security\\model\\ChainableSecurityModel"], 
-            "class": "pallo\\library\\security\\model\\generic\\GenericSecurityModel", 
+            "interfaces": ["ride\\library\\security\\model\\SecurityModel", "ride\\library\\security\\model\\ChainableSecurityModel"], 
+            "class": "ride\\library\\security\\model\\generic\\GenericSecurityModel", 
             "id": "generic",
             "calls": [
                 {
@@ -50,7 +50,7 @@
                             "name": "io",
                             "type": "dependency",
                             "properties": {
-                                "interface": "pallo\\library\\security\\model\\generic\\io\\SecurityModelIO", 
+                                "interface": "ride\\library\\security\\model\\generic\\io\\SecurityModelIO", 
                                 "id": "%system.security.model.io|xml%"
                             }
                         },
@@ -58,7 +58,7 @@
                             "name": "hashAlgorithm",
                             "type": "dependency",
                             "properties": {
-                                "interface": "pallo\\library\\encryption\\hash\\Hash",
+                                "interface": "ride\\library\\encryption\\hash\\Hash",
                                 "id": "security"
                             }
                         }                        
@@ -67,7 +67,7 @@
             ]
         },
         {
-            "interfaces": "pallo\\library\\security\\model\\SecurityModel", 
+            "interfaces": "ride\\library\\security\\model\\SecurityModel", 
             "extends": "chain",
             "id": "chain",
             "calls": [
@@ -78,7 +78,7 @@
                             "name": "securityModel",
                             "type": "dependency",
                             "properties": {
-                                "interface": "pallo\\library\\security\\model\\ChainableSecurityModel",
+                                "interface": "ride\\library\\security\\model\\ChainableSecurityModel",
                                 "id": "generic"
                             }
                         }
