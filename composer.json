@@ -2,7 +2,6 @@
     "name": "ride/web-security-generic",
     "description": "Generic security model integration for a Ride web application.",
     "license": "MIT",
-    "version": "0.1.3",
     "authors": [
         {
             "name": "Joris Vandeweerd",
@@ -10,11 +9,11 @@
         }
     ],
     "require": {
-        "ride/app": ">=0.5.0",
-        "ride/lib-security": ">=0.1.2",
-        "ride/lib-security-generic": ">=0.1.0",
-        "ride/lib-system": ">=0.1.2",
-        "ride/web": ">=0.2.4",
-        "ride/web-security": ">=0.1.0"
-    }    
+        "ride/app": "^1.0.0",
+        "ride/lib-security": "^1.0.0",
+        "ride/lib-security-generic": "^1.0.0",
+        "ride/lib-system": "^1.0.0",
+        "ride/web": "^1.0.0",
+        "ride/web-security": "^1.0.0"
+    }
 }
